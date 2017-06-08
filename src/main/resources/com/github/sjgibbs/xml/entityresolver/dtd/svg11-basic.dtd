@@ -1,11 +1,11 @@
 <!-- ....................................................................... -->
-<!-- SVG 1.1 DTD ........................................................... -->
-<!-- file: svg11.dtd
+<!-- SVG 1.1 Basic DTD ..................................................... -->
+<!-- file: svg11-basic.dtd
 -->
 
-<!-- SVG 1.1 DTD
+<!-- SVG 1.1 Basic DTD
 
-     This is SVG, a language for describing two-dimensional graphics in XML.
+     This is SVG Basic, a proper subset of SVG.
 
      The Scalable Vector Graphics (SVG)
      Copyright 2001, 2002, 2011 World Wide Web Consortium
@@ -22,17 +22,17 @@
      It is provided "as is" without expressed or implied warranty.
 
         Author:   Jun Fujisawa <fujisawa.jun@canon.co.jp>
-        Revision: $Id: svg11.dtd,v 1.15 2011/07/08 03:20:22 cmccorma Exp $
+        Revision: $Id: svg11-basic.dtd,v 1.15 2011/07/08 03:20:22 cmccorma Exp $
 
 -->
-<!-- This is the driver file for version 1.1 of the SVG DTD.
+<!-- This is the driver file for version 1.1 of the SVG Basic DTD.
 
      This DTD is identified by the PUBLIC and SYSTEM identifiers:
 
-        PUBLIC "-//W3C//DTD SVG 1.1//EN"
-        SYSTEM "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
+        PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN"
+        SYSTEM "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd"
 -->
-<!ENTITY % SVG.version "-//W3C//DTD SVG 1.1//EN" >
+<!ENTITY % SVG.version "-//W3C//DTD SVG 1.1 Basic//EN" >
 
 <!-- Use this URI to identify the default namespace:
 
@@ -56,13 +56,13 @@
 
 <!-- Document Model Module ....................................... -->
 <!ENTITY % svg-model.mod
-    PUBLIC "-//W3C//ENTITIES SVG 1.1 Document Model//EN"
-           "svg11-model.mod" >
+    PUBLIC "-//W3C//ENTITIES SVG 1.1 Basic Document Model//EN"
+           "svg11-basic-model.mod" >
 
 <!-- Attribute Collection Module ................................. -->
 <!ENTITY % svg-attribs.mod
-    PUBLIC "-//W3C//ENTITIES SVG 1.1 Attribute Collection//EN"
-           "svg11-attribs.mod" >
+    PUBLIC "-//W3C//ENTITIES SVG 1.1 Basic Attribute Collection//EN"
+           "svg11-basic-attribs.mod" >
 
 <!-- Modular Framework Module .................................... -->
 <!ENTITY % svg-framework.module "INCLUDE" >
@@ -87,14 +87,6 @@
            "svg-core-attrib.mod" >
 %svg-core-attrib.mod;]]>
 
-<!-- Container Attribute Module .................................. -->
-<!ENTITY % svg-container-attrib.module "INCLUDE" >
-<![%svg-container-attrib.module;[
-<!ENTITY % svg-container-attrib.mod
-    PUBLIC "-//W3C//ENTITIES SVG 1.1 Container Attribute//EN"
-           "svg-container-attrib.mod" >
-%svg-container-attrib.mod;]]>
-
 <!-- Viewport Attribute Module ................................... -->
 <!ENTITY % svg-viewport-attrib.module "INCLUDE" >
 <![%svg-viewport-attrib.module;[
@@ -111,7 +103,7 @@
            "svg-paint-attrib.mod" >
 %svg-paint-attrib.mod;]]>
 
-<!-- Paint Opacity Attribute Module .............................. -->
+<!-- Opacity Attribute Module .................................... -->
 <!ENTITY % svg-opacity-attrib.module "INCLUDE" >
 <![%svg-opacity-attrib.module;[
 <!ENTITY % svg-opacity-attrib.mod
@@ -217,14 +209,6 @@
            "svg-text.mod" >
 %svg-text.mod;]]>
 
-<!-- Marker Module ............................................... -->
-<!ENTITY % svg-marker.module "INCLUDE" >
-<![%svg-marker.module;[
-<!ENTITY % svg-marker.mod
-    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Marker//EN"
-           "svg-marker.mod" >
-%svg-marker.mod;]]>
-
 <!-- Color Profile Module ........................................ -->
 <!ENTITY % svg-profile.module "INCLUDE" >
 <![%svg-profile.module;[
@@ -249,12 +233,12 @@
            "svg-pattern.mod" >
 %svg-pattern.mod;]]>
 
-<!-- Clip Module ................................................. -->
+<!-- Basic Clip Module ........................................... -->
 <!ENTITY % svg-clip.module "INCLUDE" >
 <![%svg-clip.module;[
 <!ENTITY % svg-clip.mod
-    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Clip//EN"
-           "svg-clip.mod" >
+    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Basic Clip//EN"
+           "svg-basic-clip.mod" >
 %svg-clip.mod;]]>
 
 <!-- Mask Module ................................................. -->
@@ -265,21 +249,13 @@
            "svg-mask.mod" >
 %svg-mask.mod;]]>
 
-<!-- Filter Module ............................................... -->
+<!-- Basic Filter Module ......................................... -->
 <!ENTITY % svg-filter.module "INCLUDE" >
 <![%svg-filter.module;[
 <!ENTITY % svg-filter.mod
-    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Filter//EN"
-           "svg-filter.mod" >
+    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Basic Filter//EN"
+           "svg-basic-filter.mod" >
 %svg-filter.mod;]]>
-
-<!-- Cursor Module ............................................... -->
-<!ENTITY % svg-cursor.module "INCLUDE" >
-<![%svg-cursor.module;[
-<!ENTITY % svg-cursor.mod
-    PUBLIC "-//W3C//ELEMENTS SVG 1.1 Cursor//EN"
-           "svg-cursor.mod" >
-%svg-cursor.mod;]]>
 
 <!-- Hyperlinking Module ......................................... -->
 <!ENTITY % svg-hyperlink.module "INCLUDE" >
@@ -329,5 +305,5 @@
            "svg-extensibility.mod" >
 %svg-extensibility.mod;]]>
 
-<!-- end of SVG 1.1 DTD .................................................... -->
+<!-- end of SVG 1.1 Basic DTD .............................................. -->
 <!-- ....................................................................... -->
