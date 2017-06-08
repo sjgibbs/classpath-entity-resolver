@@ -7,6 +7,8 @@ import org.xml.sax.SAXException;
 import java.io.IOException;
 import java.util.List;
 
+import static java.lang.String.format;
+
 /**
  * @author Simon
  * @since 26/05/2017
@@ -31,7 +33,8 @@ public class MappingListEntityResolver implements EntityResolver {
 		}
 
 		if(!allowInternet) {
-			throw new IOException("I/O disabled");
+			String message = format("I/O disabled by application (systemId: %s, publicId: %s)", systemId, publicId);
+			throw new IOException(message);
 		}
 
 		// the parser will access the URL directly

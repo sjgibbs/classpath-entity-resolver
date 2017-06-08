@@ -10,19 +10,19 @@ import java.io.Reader;
  */
 public class ClasspathEntityMapping extends AbstractEntityMapping {
 
-	private ClassLoader classLoader;
+	private Class classInBasePackage;
 	private String path;
 
-	public ClasspathEntityMapping(String publicId, String systemId, ClassLoader classLoader, String path) {
+	public ClasspathEntityMapping(String publicId, String systemId, Class classInBasePackage, String path) {
 		super(publicId, systemId);
 
-		this.classLoader = classLoader;
+		this.classInBasePackage = classInBasePackage;
 		this.path = path;
 	}
 
 	@Override
 	protected Reader openCharacterStream() {
-		InputStream in = classLoader.getResourceAsStream(path);
+		InputStream in = classInBasePackage.getResourceAsStream(path);
 		if(in==null) {
 			throw new IllegalStateException("classloader and path (" + path + ") point to a null resource stream");
 		}
