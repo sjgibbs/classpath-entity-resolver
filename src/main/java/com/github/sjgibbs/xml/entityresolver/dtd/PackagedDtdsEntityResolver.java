@@ -2,6 +2,7 @@ package com.github.sjgibbs.xml.entityresolver.dtd;
 
 import com.github.sjgibbs.xml.entityresolver.AbstractEntityMapping;
 import com.github.sjgibbs.xml.entityresolver.MappingListEntityResolver;
+import com.github.sjgibbs.xml.entityresolver.dtd.svg.SvgDtd;
 
 import java.util.List;
 

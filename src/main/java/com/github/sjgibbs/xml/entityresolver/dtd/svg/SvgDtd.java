@@ -1,4 +1,4 @@
-package com.github.sjgibbs.xml.entityresolver.dtd;
+package com.github.sjgibbs.xml.entityresolver.dtd.svg;
 
 
 import com.github.sjgibbs.xml.entityresolver.ClasspathEntityMapping;
