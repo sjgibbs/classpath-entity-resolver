@@ -33,6 +33,10 @@ public abstract class AbstractEntityMapping {
 
 	}
 
+	public String getPublicId() {
+		return publicId;
+	}
+
 	private boolean hasPublicId() {
 		if(publicId==null) {
 			return false;

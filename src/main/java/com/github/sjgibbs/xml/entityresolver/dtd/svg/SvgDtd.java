@@ -60,6 +60,11 @@ public class SvgDtd  {
 	public static ClasspathEntityMapping TINY_1_1 = map( "-//W3C//DTD SVG 1.1 Tiny//EN", "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd", "svg11-tiny.dtd");
 	public static ClasspathEntityMapping SVG_1_1 = map( "-//W3C//DTD SVG 1.1//EN", "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd", "svg11.dtd");
 
+	public static ClasspathEntityMapping SVG_1_0 = map( "-//W3C//DTD SVG 1.0//EN", "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd", "REC-SVG-20010904/svg10.dtd");
+
+
+
+
 	private static ClasspathEntityMapping map(String publicId, String systemId, String path) {
 		return new ClasspathEntityMapping(publicId, systemId,SvgDtd.class, path);
 	}

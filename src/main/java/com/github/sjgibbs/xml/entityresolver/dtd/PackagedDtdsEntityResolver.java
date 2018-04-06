@@ -63,7 +63,8 @@ public class PackagedDtdsEntityResolver {
 			SvgDtd.TINY_ATTRIBS_1_1,
 			SvgDtd.TINY_MODEL_1_1,
 			SvgDtd.TINY_1_1,
-			SvgDtd.SVG_1_1
+			SvgDtd.SVG_1_1,
+			SvgDtd.SVG_1_0
 	);
 	public static MappingListEntityResolver OFFLINE = new MappingListEntityResolver(PACKAGED_MAPPINGS, false);
 	public static MappingListEntityResolver ONLINE = new MappingListEntityResolver(PACKAGED_MAPPINGS, true);
